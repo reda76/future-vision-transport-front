@@ -1,0 +1,12 @@
+<!doctype html>
+<title>Upload</title>
+<h1>Choisissez une id dans la liste déroulante puis, cliquez sur le bouton 'valider'.<h2>
+
+<form method="POST" action="{{ url_for('mask') }}">
+  <select name="comp_select">
+    {% for i in range(json) %}
+        <option value="{{ i }}">{{ i+1 }}</option>
+    {% endfor %}
+  </select>
+  <button type="submit">Valider</button>
+</form>

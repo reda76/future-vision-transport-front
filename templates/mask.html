@@ -1,0 +1,12 @@
+<!doctype html>
+<title>Upload</title>
+<h1>Vous venez de choisir cette image.</h1>
+<img src={{link_image}} alt="Chart1" height="256" width="256">
+
+<h2>Cliquez sur le bouton ci-dessous pour voir le resultat de la prédiction :
+<form method="POST" action="{{ url_for('result') }}">
+    <input type="hidden" id="fname" name="fname" value={{select}}>
+    <button type="submit">Valider
+        <a href="result"></a>
+    </buttons>
+</form>
